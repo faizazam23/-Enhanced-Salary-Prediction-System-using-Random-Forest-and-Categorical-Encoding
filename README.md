@@ -1,100 +1,79 @@
+# English to Urdu Machine Translation using MarianMT
 
-#  Enhanced Salary Prediction System using Random Forest
+This project is a simple yet effective Machine Translation system that converts English sentences to Urdu using the **MarianMT Transformer model** from the Hugging Face Transformers library.
 
-This project predicts employee salaries based on various features using Machine Learning. It utilizes **Random Forest**, a powerful ensemble algorithm, along with categorical encoding for accurate predictions.
+## 📌 Features
 
----
+- Translates English text to Urdu using `Helsinki-NLP/opus-mt-en-ur`
+- Clean and responsive GUI built with `Tkinter`
+- Pretrained MarianMT model with high-quality translation output
+- Easy-to-run Python script with minimal setup
 
-##  Project Files
+## 🧠 Model Used
 
-- `salary_prediction.ipynb` – Main Jupyter notebook
-- `salaries.csv` – Dataset used
-- `requirements.txt` – List of Python dependencies
+- **Model Name:** Helsinki-NLP/opus-mt-en-ur
+- **Architecture:** MarianMT (Transformer-based encoder-decoder)
+- **Source:** Hugging Face Transformers library
 
----
+## 🚀 How It Works
 
-##  Dataset Overview
+1. User enters English text in the input box.
+2. The system tokenizes the text and feeds it into the MarianMT model.
+3. The model returns translated Urdu text.
+4. The output is displayed in a dedicated Urdu output box.
 
-The dataset includes:
+## 🛠️ Installation
 
-- **Education Level**
-- **Job Title**
-- **Years of Experience**
-- **Location**
-- **Industry**
-- **Salary** (Target)
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/english-to-urdu-translation.git
+    cd english-to-urdu-translation
+    ```
 
-All categorical variables are encoded appropriately for model training.
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
----
+3. Run the app:
+    ```bash
+    python app.py
+    ```
 
-## Technologies Used
+## 🖼️ GUI Preview
 
-- Python 
-- Pandas
-- NumPy
-- Scikit-learn
-- Seaborn & Matplotlib
+- Simple interface with two text boxes (English input and Urdu output)
+- One-click translation using the "Translate" button
 
----
+## 📂 Project Structure
 
-##  ML Workflow
+```
+├── app.py                  # Main application file with GUI
+├── requirements.txt        # Required Python packages
+├── README.md               # Project overview and instructions
+```
 
-1. Load and explore dataset
-2. Clean missing values and encode categorical features
-3. Train a Random Forest Regressor model
-4. Evaluate model using R² Score, MAE, RMSE
-5. Visualize feature importances and results
+## 📝 Requirements
 
----
+- Python 3.7+
+- `transformers`
+- `torch`
+- `sentencepiece`
+- `tkinter` (usually comes pre-installed with Python)
 
-##  Sample Results
+## 💡 Example
 
-- Model: `RandomForestRegressor`
-- Accuracy (R² Score): ~85–90%
-- Visual outputs:
-  - Feature importance chart
-  - Predicted vs Actual salaries
+**Input:** `Hello, how are you?`  
+**Output:** `ہیلو، آپ کیسے ہیں؟`
 
----
+## 📚 References
 
-##  How to Run
-
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/your-username/salary-prediction-project.git
-   cd salary-prediction-project
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Launch the notebook**:
-   Open `salary_prediction.ipynb` in Jupyter or VS Code and run all cells.
+- Hugging Face MarianMT Documentation: https://huggingface.co/docs/transformers/model_doc/marian
+- Helsinki-NLP MarianMT Models: https://huggingface.co/Helsinki-NLP
 
 ---
 
-##  Future Improvements
+### 👨‍💻 Author
 
-- Add more ML models (Linear, XGBoost, etc.)
-- Deploy as a web app (Flask or Streamlit)
-- Perform hyperparameter tuning
-- Handle outliers and feature scaling
-
----
-
-##  Author
-
-**Faiz Azam**  
-BS Artificial Intelligence  
-Sindh Madressatul Islam University  
-Email: faiyz.azam@gmail.com  
-
-
----
-
-##  Tags
-
-`#MachineLearning` `#Python` `#RandomForest` `#DataScience` `#AIProjects`
+Faiz Azam - Bachelors in Artificial Intelligence | NLP Project 2025  
+Sindh Madressatul Islam University (SMIU)
